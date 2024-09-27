@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.slide {
+  /* Removed position: absolute */
+  /* Removed width: 100% */
+  background-color: rgb(108, 218, 255, 0.3);
+  flex: 1 1 auto; /* Makes all slides same size based on container */
+}
+
+.slide img {
+  width: 100%; /* Fills entire slide width */
+  height: 100%; /* Fills entire slide height */
+  object-fit: cover; /* Crops image to fit within slide */
+}
+
+#intro {
+  padding-block: 20px;
+  border-radius: 50px;
+  margin-block: 10px;
+  width: 100%; /* Set width to 100% for full-width */
+  aspect-ratio: 700 / 500; /* Maintain 350x250 aspect ratio */
+  max-width: 700px; /* Limit maximum width to 350px */
+  position: relative;
+}
+
+h2 {
+  position: absolute;
+  top: 50%; /* Position at the center vertically */
+  left: 50%; /* Position at the center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Vertically center content within the h2 */
+  justify-content: center;
+}
+
+
+/*0
+.slider {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  width: 100%; 
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  
+margin: 0 auto;}
+
+.slide {
+ 
+  position: absolute;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 40%; 
+  object-fit: cover;
+}
+*/
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(29, 168, 43, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;  
+  font-weight: 600;
+  font-size: 3rem;
+  border-radius: 50%;
+
+  opacity: 0.7;  /*Adjust opacity as needed */
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+  
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+
